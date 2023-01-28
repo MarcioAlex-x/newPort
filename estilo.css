@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --cor1:#A529FF;
+    --cor2: #FFB436;
+    --cor3: #221BFF;
+    --cor4: #E3FF03;
+    --cor5:#0F86FF;
+
+}
+.navbar{
+    /* display: grid;
+    grid-template-areas: logo items; */
+    display: flex;
+    justify-content: space-between;
+    background: rgba(204, 204, 204, 0.315);
+}
+.navlogo{
+    justify-self: flex-start;
+}
+.navlogo img{
+    margin: 0 15px;
+    width: 60px;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.navitems ul{
+    /* grid-area: items; */
+    display: flex;
+    list-style: none;
+    
+}
+.navitems ul li{
+    
+    margin-right: 20px;
+    color: #A529FF;
+}
+.navitems ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #A529FF;
+}
+.navitems ul li a:hover{
+    background-color: #A529FF;
+    border-radius: 5px; 
+    color: white;  
+    transition: 0.5s; 
+}
+.formulario .btn{
+    background-color: #A529FF;
+    color: aliceblue;
+}
+.formulario .btn:hover{
+    background-color: #7f21c2;
+    color: antiquewhite;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    font-size: 100px;
+}
+.whatsapp a{
+        color: green;
+}
+.whatsapp a:hover{
+    color: rgb(4, 77, 4);
+}
+.borda{
+    box-sizing: border-box;
+    animation: borda 5s infinite;
+}
+@keyframes borda {
+    0% { box-shadow: 0px 0px 0px blue;}
+    10% { box-shadow: 0px 0px 5px green;}
+    20% { box-shadow: 0px 0px 0px blue;}
+    30% { box-shadow: 0px 0px 5px green;}
+    40% { box-shadow: 0px 0px 0px blue;}
+    50% { box-shadow: 0px 0px 5px green;}
+    60% { box-shadow: 0px 0px 0px blue;}
+    70% { box-shadow: 0px 0px 5px green;}
+    80% { box-shadow: 0px 0px 0px blue;}
+    90% { box-shadow: 0px 0px 5px green;}
+    
+    
+    
+}
+
+@media screen and (max-width:900px ){
+    .navitems{
+        margin: 0;
+    }
+    .animacao video{
+        width: 100%;
+    }
+    .whatsapp{
+        font-size: 70px;
+        
+    }
+    
+}
+
+
+
+
