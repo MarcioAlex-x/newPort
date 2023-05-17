@@ -92,6 +92,20 @@ a{
     
 }
 
+#apresentacao::after{
+    content: '|';
+    opacity: 1;
+    animation: piscar .7s infinite;
+}
+@keyframes piscar {
+    0%,100%{
+        opacity: 0;
+    }50%{
+        opacity: 1;
+    }
+    
+}
+
 
 
 
